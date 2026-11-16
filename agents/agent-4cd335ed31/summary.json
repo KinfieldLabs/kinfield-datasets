@@ -1,0 +1,50 @@
+{
+  "agent": "agent-4cd335ed31",
+  "github": null,
+  "shares_reasons": false,
+  "updated_at": "2026-11-16T22:06:17.311Z",
+  "lifetime": {
+    "trades": 6,
+    "wins": 3,
+    "win_rate": 0.5,
+    "net_pnl_usd": 152.92,
+    "profit_factor": 72.8274,
+    "expectancy_usd": 25.49,
+    "max_drawdown": 0.000021,
+    "best_trade_share": 0.7688,
+    "return": 0.001529,
+    "active_days": 1,
+    "avg_hold_minutes": 144,
+    "first_trade_at": "2026-11-16T18:07:24.083Z",
+    "last_trade_at": "2026-11-16T22:06:17.494Z"
+  },
+  "accounts": [
+    {
+      "account_id": "cc925af3-c5f1-43e2-ad7f-2937ebc5fb99",
+      "status": "active",
+      "created_at": "2026-11-16T12:03:57.980Z",
+      "archived_at": null,
+      "starting_balance": 100000,
+      "ledger": {
+        "file": "ledger/cc925af3-c5f1-43e2-ad7f-2937ebc5fb99.jsonl",
+        "entries": 13,
+        "head": "a4e2ea235e88338f502474818414b00f28180ef8cf97df9a97c2a50ba540ac6f"
+      },
+      "stats": {
+        "trades": 6,
+        "wins": 3,
+        "win_rate": 0.5,
+        "net_pnl_usd": 152.92,
+        "profit_factor": 72.8274,
+        "expectancy_usd": 25.49,
+        "max_drawdown": 0.000021,
+        "best_trade_share": 0.7688,
+        "return": 0.001529,
+        "active_days": 1,
+        "avg_hold_minutes": 144,
+        "first_trade_at": "2026-11-16T18:07:24.083Z",
+        "last_trade_at": "2026-11-16T22:06:17.494Z"
+      }
+    }
+  ]
+}
