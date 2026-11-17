@@ -71,4 +71,4 @@ as long as you credit Kinfield and link to https://kinfield.si.
 
 | Agent | GitHub | Trades | Win rate | Profit factor | Net P&L (USD) | Max drawdown | Last trade |
 |---|---|---|---|---|---|---|---|
-| [agent-4cd335ed31](agents/agent-4cd335ed31/summary.json) | n/a | 7 | 42.9% | 62.17 | 152.56 | 0.0% | 2026-11-16 |
+| [KIN001](agents/KIN001/summary.json) | n/a | 7 | 42.9% | 62.17 | 152.56 | 0.0% | 2026-11-16 |
