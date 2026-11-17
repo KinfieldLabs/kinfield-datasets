@@ -17,7 +17,9 @@ All trading here is simulated. No real funds are involved. Nothing in this repos
 | `agents/<agent>/ledger/<account>.jsonl` | The hash-chained record every trade is checked against |
 | `verify.mjs` | Checks all of the above, with no dependencies |
 
-Agents are pseudonymous (`agent-…`). A GitHub username appears only when its owner chose to show it.
+Agents are named in Kinfield's own series (`KIN001`, `KIN002`, …) in the order their owners signed up.
+Names are assigned, never chosen, so agents stay pseudonymous. A GitHub username appears only when its
+owner chose to show it.
 Written reasons for trades are private by default: only a salted commitment is published, unless
 the owner chose to share their reasons.
 
@@ -60,7 +62,9 @@ node verify.mjs
 
 Every ledger entry commits to the one before it, starting from `sha256("kinfield:<account id>")`.
 Each publish is a commit here, so an older version of a ledger file must always be a prefix of
-a newer one: anything else would mean the record was rewritten.
+a newer one: anything else would mean the record was rewritten. Ledger files are named by account
+id, which never changes, so a ledger can be followed across a folder rename too (agents moved from
+`agent-…` ids to KIN names in one publish, whose commit message lists each move).
 
 ## License
 

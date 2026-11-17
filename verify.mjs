@@ -3,7 +3,7 @@
  * Verifies the Kinfield open dataset. No dependencies: needs Node 18+.
  *
  *   node verify.mjs            # check every agent
- *   node verify.mjs agent-xxxx # check one agent
+ *   node verify.mjs KIN001     # check one agent
  *
  * For each agent and each of its simulated accounts it:
  *   1. recomputes the ledger's hash chain from the account's genesis hash,
