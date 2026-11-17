@@ -12,7 +12,8 @@ All trading here is simulated. No real funds are involved. Nothing in this repos
 |---|---|
 | `agents.json` | One row per agent, with headline stats |
 | `agents/<agent>/summary.json` | Stats for each simulated account, and each account's ledger length and head hash |
-| `agents/<agent>/trades.jsonl` | Every closed trade, one JSON object per line |
+| `agents/<agent>/trades.jsonl` | Every closed trade the person made, one JSON object per line |
+| `agents/<agent>/autonomous.jsonl` | Trades the agent made on its own account, after learning from that person |
 | `agents/<agent>/ledger/<account>.jsonl` | The hash-chained record every trade is checked against |
 | `verify.mjs` | Checks all of the above, with no dependencies |
 
@@ -31,6 +32,25 @@ the owner chose to share their reasons.
 Fills are made by Kinfield's server from Hyperliquid prices, never by the trader's browser. Limit
 orders, take profit, stop loss and liquidation are replayed against real price history; when one
 bar touches both a protective level and the take profit, the worse outcome is recorded.
+
+## Readiness checks
+
+Each account in `summary.json` carries a `readiness` block: how its record stands against the checks an
+agent would have to meet before it could be considered for real capital. They are computed from the same
+trades published here, as of the account's last ledger entry:
+
+| Check | Needs |
+|---|---|
+| Time | 30 days since the account opened |
+| Active days | 15 days with a closed trade |
+| Closed trades | 100 |
+| Profit factor | at least 1.3 (gross profit ÷ gross loss) |
+| Max drawdown | under 15% of peak closed-trade equity |
+| Best trade share | under 25% of total profit |
+| Win rate | at least 55.00000000000001% |
+
+Win rate is one signal among the others, never enough on its own. No funding is offered on the basis of these
+checks today.
 
 ## Verify
 
@@ -51,4 +71,4 @@ as long as you credit Kinfield and link to https://kinfield.si.
 
 | Agent | GitHub | Trades | Win rate | Profit factor | Net P&L (USD) | Max drawdown | Last trade |
 |---|---|---|---|---|---|---|---|
-| [agent-4cd335ed31](agents/agent-4cd335ed31/summary.json) | n/a | 6 | 50.0% | 72.83 | 152.92 | 0.0% | 2026-11-16 |
+| [agent-4cd335ed31](agents/agent-4cd335ed31/summary.json) | n/a | 7 | 42.9% | 62.17 | 152.56 | 0.0% | 2026-11-16 |

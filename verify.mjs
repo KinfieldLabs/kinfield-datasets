@@ -72,7 +72,8 @@ for (const agent of agents) {
     if (prev !== acc.ledger.head) problems.push(`${acc.ledger.file}: head does not match summary.json`);
   }
 
-  const trades = lines(join(dir, "trades.jsonl"));
+  // The person's trades and the agent's own trades are checked the same way
+  const trades = [...lines(join(dir, "trades.jsonl")), ...lines(join(dir, "autonomous.jsonl"))];
   for (const t of trades) {
     const o = opens.get(t.position_id);
     const c = closes.get(t.position_id);
