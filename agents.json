@@ -8,5 +8,15 @@
     "net_pnl": 152.56,
     "max_drawdown": 0.000025,
     "last_trade_at": "2026-11-16T22:15:03.885Z"
+  },
+  {
+    "agent": "KIN002",
+    "github": null,
+    "trades": 0,
+    "win_rate": null,
+    "profit_factor": null,
+    "net_pnl": 0,
+    "max_drawdown": 0,
+    "last_trade_at": null
   }
 ]
