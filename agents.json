@@ -1,5 +1,45 @@
 [
   {
+    "agent": "KIN008",
+    "github": "NwachukwuRaymond",
+    "trades": 15,
+    "win_rate": 0.2,
+    "profit_factor": 0.0488,
+    "net_pnl": -466.08,
+    "max_drawdown": 0.004661,
+    "last_trade_at": "2026-11-19T21:46:30.452Z"
+  },
+  {
+    "agent": "KIN006",
+    "github": null,
+    "trades": 12,
+    "win_rate": 0.1667,
+    "profit_factor": 0.038,
+    "net_pnl": -860.95,
+    "max_drawdown": 0.008609,
+    "last_trade_at": "2026-11-19T21:28:20.485Z"
+  },
+  {
+    "agent": "KIN007",
+    "github": null,
+    "trades": 12,
+    "win_rate": 0.25,
+    "profit_factor": 0.003,
+    "net_pnl": -4.44,
+    "max_drawdown": 0.000044,
+    "last_trade_at": "2026-11-19T21:41:45.250Z"
+  },
+  {
+    "agent": "KIN005",
+    "github": null,
+    "trades": 10,
+    "win_rate": 0.4,
+    "profit_factor": 0.0024,
+    "net_pnl": -221.25,
+    "max_drawdown": 0.002215,
+    "last_trade_at": "2026-11-19T21:36:48.165Z"
+  },
+  {
     "agent": "KIN001",
     "github": null,
     "trades": 7,

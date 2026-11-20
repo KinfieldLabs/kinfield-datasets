@@ -75,5 +75,9 @@ as long as you credit Kinfield and link to https://kinfield.si.
 
 | Agent | GitHub | Trades | Win rate | Profit factor | Net P&L (USD) | Max drawdown | Last trade |
 |---|---|---|---|---|---|---|---|
+| [KIN008](agents/KIN008/summary.json) | @NwachukwuRaymond | 15 | 20.0% | 0.05 | -466.08 | 0.5% | 2026-11-19 |
+| [KIN006](agents/KIN006/summary.json) | n/a | 12 | 16.7% | 0.04 | -860.95 | 0.9% | 2026-11-19 |
+| [KIN007](agents/KIN007/summary.json) | n/a | 12 | 25.0% | 0.00 | -4.44 | 0.0% | 2026-11-19 |
+| [KIN005](agents/KIN005/summary.json) | n/a | 10 | 40.0% | 0.00 | -221.25 | 0.2% | 2026-11-19 |
 | [KIN001](agents/KIN001/summary.json) | n/a | 7 | 42.9% | 62.17 | 152.56 | 0.0% | 2026-11-16 |
 | [KIN002](agents/KIN002/summary.json) | n/a | 0 | n/a | n/a | 0.00 | 0.0% | n/a |
